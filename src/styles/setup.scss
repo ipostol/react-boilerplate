@@ -1,0 +1,13 @@
+@import '~normalize.css';
+
+*:focus {
+  outline: none;
+}
+
+body {
+  font-family: Open Sans, sans-serif;
+  color: #2b3147;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

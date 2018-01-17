@@ -1,0 +1,18 @@
+{
+  "setupFiles": [
+    "./src/helpers/setup.js"
+  ],
+  "snapshotSerializers": [
+    "<rootDir>/node_modules/enzyme-to-json/serializer"
+  ],
+  "roots": [
+    "src"
+  ],
+  "moduleDirectories": ["src", "node_modules"],
+  "moduleNameMapper": {
+    "^.+\\.(css|scss|svg|png)$": "identity-obj-proxy"
+  },
+  "globals": {
+    "IS_SERVER": false
+  }
+}

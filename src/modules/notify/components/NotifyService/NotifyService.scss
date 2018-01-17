@@ -1,0 +1,52 @@
+.notify {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 0 128px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  height: 56px;
+  top: -56px;
+  opacity: 0;
+  background-color: #2b3147;
+  box-shadow: 0 0 8px 0 rgba(53, 68, 126, 0.05), 0 4px 8px 0 rgba(53, 68, 126, 0.09);
+}
+
+.opened {
+  animation: show 2.26s cubic-bezier(0, 0.08, 0.68, 1);
+}
+
+@keyframes show {
+  0% {
+    top: -56px;
+    opacity: 0;
+  }
+
+  14% {
+    opacity: 0;
+  }
+
+  23% {
+    top: 0;
+  }
+
+  32% {
+    opacity: 1;
+  }
+
+  77% {
+    top: 0;
+    opacity: 1;
+  }
+
+  83% {
+    top: 0;
+  }
+
+  100% {
+    top: -56px;
+    opacity: 0;
+  }
+}

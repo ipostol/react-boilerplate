@@ -1,0 +1,50 @@
+@import '~normalize.css'; // @TODO replace to some global place for normalize
+
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  color: #000;
+}
+
+:global {
+  .ReactModal__Body--open {
+    overflow: hidden;
+  }
+}
+
+:global {
+  #react-root {
+    height: 100%;
+  }
+}
+
+*:focus {
+  outline: none;
+}
+
+// ----------------
+
+.container {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}

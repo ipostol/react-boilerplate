@@ -1,0 +1,11 @@
+{
+  "requires": [
+    "./src/styles/setup.scss",
+    "./src/helpers/setup.js"
+  ],
+  "links": ["https://fonts.googleapis.com/css?family=Open+Sans:400,600"],
+  "scripts": [],
+  "modulesDirectories": ["src"],
+  "root": "src",
+  "env": {}
+}

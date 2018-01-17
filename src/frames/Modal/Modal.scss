@@ -1,0 +1,41 @@
+.general {
+  position: relative;
+  display: flex;
+}
+
+.modal {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 97vh;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #000;
+  z-index: 1;
+
+  &.form {
+    background-color: #fff;
+    padding: 25px 33px;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(43, 48, 71, 0.88);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 0;
+  right: -36px;
+  border: none;
+  display: block;
+}
